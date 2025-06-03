@@ -29,7 +29,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { AccountCircle } from "@mui/icons-material";
 
-const Checkin: React.FC = () => {
+const PetProfile: React.FC = () => {
   const [cpf, setCpf] = useState("");
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -286,4 +286,4 @@ const Checkin: React.FC = () => {
   );
 };
 
-export default Checkin;
+export default PetProfile;

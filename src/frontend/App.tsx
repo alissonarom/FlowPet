@@ -7,9 +7,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router";
 import theme from "./styles/theme";
 import Login from "./pages/Login";
-import Profile from "./pages/Profile";
-import CriarLista from "./pages/CriarLista";
-import Checkin from "./pages/Checkin";
+// import Home from "./pages/Home";
+// import Shopping from "./pages/Shopping";
+// import Treatments from "./pages/Treatments";
+// import PetHotel from "./pages/PetHotel";
+import Adoption from "./pages/Adoption";
+import PetProfile from "./pages/PetProfile";
+// import Orders from "./pages/Orders";
+import UserProfile from "./pages/UserProfile";
 
 const App: React.FC = () => {
   return (
@@ -18,9 +23,14 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/checkin" element={<Checkin />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/criarLista" element={<CriarLista />} />
+          {/* <Route path="/home" element={<Home />} />
+          <Route path="/shopping" element={<Shopping />} />
+          <Route path="/treatments" element={<Treatments />} />
+          <Route path="/pet-hotel" element={<PetHotel />} /> */}
+          <Route path="/adoption" element={<Adoption />} />
+          <Route path="/pet-profile" element={<PetProfile />} />
+          {/* <Route path="/orders" element={<Orders />} /> */}
+          <Route path="/user-profile" element={<UserProfile />} />
         </Routes>
       </Router>
     </ThemeProvider>

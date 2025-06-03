@@ -68,7 +68,7 @@ const modalStyle = {
   borderRadius: "8px",
 };
 
-const Profile: React.FC = () => {
+const UserProfile: React.FC = () => {
   const user = getUserFromLocalStorage();
   const [lista, setLista] = useState<List[]>([]);
   const [searchParams] = useSearchParams();
@@ -989,4 +989,4 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
+export default UserProfile;
